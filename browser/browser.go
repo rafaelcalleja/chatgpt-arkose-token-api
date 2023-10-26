@@ -65,7 +65,7 @@ func init() {
 	}
 
 	page, _ = browser.NewPage()
-	page.Route("https://client-api.arkoselabs.com/fc/gt2/public_key/35536E1E-65B4-4D96-9D97-6ADB7EFF8147", func(route playwright.Route) {
+	page.Route("https://client-api.arkoselabs.com/fc/gt2/public_key/0A1D34FC-659D-4E23-B17B-694DCFCF6A6C", func(route playwright.Route) {
 		postData, _ := route.Request().PostData()
 		split := strings.Split(postData, "=")
 		bda := ""
